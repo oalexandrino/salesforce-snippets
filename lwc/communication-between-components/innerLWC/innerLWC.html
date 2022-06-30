@@ -1,0 +1,24 @@
+<template>
+  <lightning-card title="Inner LWC">
+    <lightning-button
+      label="Send to Other"
+      slot="actions"
+      onclick={sendToOther}
+    ></lightning-button>
+    <p class="slds-p-horizontal_small">This is the inner LWC</p>
+    <p slot="footer">{message}</p>
+    <div class="slds-form-element__control slds-p-left_large">
+      <div class="slds-form-element__row">
+        <div class="slds-size_1-of-2">
+          <lightning-input
+            type="text"
+            name="inputMessage"
+            value={message}
+            onchange={handleMessage}
+          >
+          </lightning-input>
+        </div>
+      </div>
+    </div>
+  </lightning-card>
+</template>

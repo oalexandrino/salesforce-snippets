@@ -1,0 +1,25 @@
+<template>
+  <lightning-card title="Parent LWC">
+    <p class="slds-p-horizontal_small">This is the parent LWC</p>
+    <p slot="footer">{outsideMessage}</p>
+    <div class="slds-form-element__control slds-p-left_large">
+      <div class="slds-form-element__row">
+        <div class="slds-size_1-of-2">
+          <lightning-input
+            t
+            ype="text"
+            name="inputMessage"
+            value={message}
+            onchange={handleMessage}
+          >
+          </lightning-input>
+        </div>
+      </div>
+    </div>
+  </lightning-card>
+
+  <div class="slds-p-top_large">
+    <c-inner-l-w-c message={message} onsendtooutside={handleOutsideMessage}>
+    </c-inner-l-w-c>
+  </div>
+</template>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningMessageChannel>
+    <masterLabel>MyMessageChannel</masterLabel>
+    <isExposed>true</isExposed>
+    <description
+  >This is the MyMessageChannel which is used by LWC component to send data</description>
+    <lightningMessageFields>
+        <description>This is the message</description>
+        <fieldName>message</fieldName>
+    </lightningMessageFields>
+</LightningMessageChannel>

@@ -1,0 +1,20 @@
+<template>
+  <lightning-card title="Other LWC">
+    <p class="slds-p-horizontal_small">This is other LWC: no hierarchy</p>
+    <p slot="footer">{message}</p>
+    <div class="slds-form-element__control slds-p-left_large">
+      <div class="slds-form-element__row">
+        <div class="slds-size_1-of-2">
+          <lightning-input
+            t
+            ype="text"
+            name="inputMessage"
+            value={message}
+            onchange={handleMessage}
+          >
+          </lightning-input>
+        </div>
+      </div>
+    </div>
+  </lightning-card>
+</template>
