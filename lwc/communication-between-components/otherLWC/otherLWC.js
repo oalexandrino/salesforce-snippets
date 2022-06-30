@@ -2,7 +2,8 @@ import { LightningElement, api, wire } from "lwc";
 import { subscribe, MessageContext } from "lightning/messageService";
 import MY_CHANNEL from "@salesforce/messageChannel/MyMessageChannel__c";
 
-export default class OtherLWC extends LightningElement {
+export default class OtherLWC extends LightningElement 
+{
   @api message;
   @wire(MessageContext)
   messageContext;
