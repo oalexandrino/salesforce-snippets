@@ -1,2 +1,2 @@
 # salesforce-snippets
-Salesforce - declarative &amp; programmatic snippets)
+Salesforce - declarative &amp; programmatic snippets
